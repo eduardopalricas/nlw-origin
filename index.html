@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto nlw- origin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="avatar">
+        <span>
+          <img src="images/build.svg" alt="Selo Rocketseat">
+        </span>
+        <img src="images/foto.png" alt="Foto de Eduardo">
+      </div>
+
+      <h1 id="name">Eduardo Cardoso</h1>
+      <a href="https://github.com/eduardopalricas" target="_blank">
+        <img src="images/github.svg" alt="Icon do github"> 
+        Eduardo Palricas</a>
+        <p>A very determined student who has many abilities. Keep an eye on him, because he's going to get very far.</p>
+
+        <ul id="sociallinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/c/RocketSeat" target="_blank">
+              <img src="images/youtube.svg" alt="icon do youtube">
+            </a>
+          </li>
+          <li class="instagram"><a href="https://instagram.com/eduardo_cardoso33" target="_blank">
+            <img src="images/instagram.svg" alt="Icon do instagram">
+          </a></li>
+          <li class="facebook"><a href="https://www.facebook.com/eduardo.palricas" target="_blank">
+            <img src="images/facebook.svg" alt="Icon do facebook">
+          </a></li>
+          <li class="twitter"><a href="https://twitter.com/_Edu33_" target="_blank">
+            <img src="images/twitter.png" alt="Icon twitter">
+          </a></li>
+        </ul>
+    </section>
+  </main>
+  <script>
+    const linksSocialMedia = {
+      github: 'eduardopalricas',
+      youtube:'Rocketseat',
+      instagram:'eduardo_cardoso33',
+      facebook:'eduardo.palricas',
+      twitter:'_Edu33_'
+  }   
+
+  function changeSocialMediaLinks(){
+    for(let li of sociallinks.children){
+      const social = li.getAttribute('class')
+      li.children[0].href =`https://www.${social}.com/${linksSocialMedia[social]}`
+
+    }
+  }
+  changeSocialMediaLinks()
+  </script>
+</body>
+</html>
