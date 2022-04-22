@@ -20,6 +20,7 @@ body{
 }
 
 main{ 
+  height: 100%;
   margin: 0px;
   background: url('images/background.svg');
   width: 375px;
