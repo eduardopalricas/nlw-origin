@@ -1,2 +1,2 @@
 # nlw-origin
- PRojeto nlw, criado pela rocketseat. Trilha origin.
+ Projeto nlw, criado pela rocketseat. Trilha origin.

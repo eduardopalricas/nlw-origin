@@ -14,14 +14,14 @@
         <span>
           <img src="images/build.svg" alt="Selo Rocketseat">
         </span>
-        <img src="images/foto.png" alt="Foto de Eduardo">
+        <img src="images/foto.png" alt="Foto de Eduardo" id="img">
       </div>
 
-      <h1 id="name">Eduardo Cardoso</h1>
-      <a href="https://github.com/eduardopalricas" target="_blank">
+      <h1 id="name1">Eduardo Cardoso</h1>
+      <a id="linkusergit" href="https://github.com/eduardopalricas" target="_blank">
         <img src="images/github.svg" alt="Icon do github"> 
-        Eduardo Palricas</a>
-        <p>A very determined student who has many abilities. Keep an eye on him, because he's going to get very far.</p>
+        <span id="name2"></span></a>
+        <p id="bio"></p>
 
         <ul id="sociallinks">
           <li class="youtube">
@@ -38,26 +38,10 @@
           <li class="twitter"><a href="https://twitter.com/_Edu33_" target="_blank">
             <img src="images/twitter.png" alt="Icon twitter">
           </a></li>
+          
         </ul>
     </section>
   </main>
-  <script>
-    const linksSocialMedia = {
-      github: 'eduardopalricas',
-      youtube:'Rocketseat',
-      instagram:'eduardo_cardoso33',
-      facebook:'eduardo.palricas',
-      twitter:'_Edu33_'
-  }   
-
-  function changeSocialMediaLinks(){
-    for(let li of sociallinks.children){
-      const social = li.getAttribute('class')
-      li.children[0].href =`https://www.${social}.com/${linksSocialMedia[social]}`
-
-    }
-  }
-  changeSocialMediaLinks()
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
