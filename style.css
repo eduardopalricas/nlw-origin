@@ -2,7 +2,7 @@
 
 
 *{
-  margin: 0;
+  margin: 0px;
 }
 
 
@@ -20,17 +20,17 @@ body{
 }
 
 main{ 
-  height: 100%;
-  margin-top: 0;
-  margin-bottom:0;
+  margin: 0;
   background: url('images/background.svg');
   width: 375px;
   color: var(--gray);
+  max-height: 812px;
 }
 
 section.container{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
   max-width: 250px;
   text-align: center;
 }
@@ -79,10 +79,9 @@ p{
 
 ul{
   margin-top: 4rem;
-
+  margin-bottom: 0px;
   list-style: none;
   padding: 0;
-
   display: flex;
   gap: 8px;
   justify-content: center;
