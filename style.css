@@ -16,14 +16,13 @@ html,body{
 body{
   display: grid;
   place-items: center;
-  background-color:rgb(0, 0, 0);
+  background-color:var(--gray);
 }
 
 main{ 
   height: 100%;
   margin-top: 0;
   margin-bottom:0;
-  border-radius:10px ;
   background: url('images/background.svg');
   width: 375px;
   color: var(--gray);
