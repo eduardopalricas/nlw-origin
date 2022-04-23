@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Passion+One:wght@400;700;900&family=Playfair+Display&family=Quintessential&family=Roboto:ital,wght@0,400;1,700&family=Sriracha&display=swap');
 
 
+
+
 *{
   margin: 0px;
 }
@@ -18,6 +20,15 @@ body{
   place-items: center;
   background-color:var(--gray);
 }
+
+#faixa{
+  display: none;
+}
+
+#quebra{
+  display: none;
+}
+
 
 main{ 
   height: 100%;
@@ -63,7 +74,7 @@ h1{
 }
 
 a{
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   color: var(--gray);
   text-decoration: none;
 
@@ -86,4 +97,72 @@ ul{
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+  main{
+    width: 300px;
+  }
+}
+
+
+@media only screen and (min-width: 600px){
+
+
+  body{
+    position: relative;
+  }
+
+
+  main{
+    width: 358px;
+    height: 540px;
+    position: absolute;
+    top: 60px;
+    background: url('images/background2.png');
+  }
+
+  
+
+
+  #faixa{
+    height: 110px;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+  }
+
+  #quebra{
+    display: flex;
+    z-index:1;
+    position: absolute;
+    position: absolute;
+    top: 110px;
+    width: 60px;
+  }
+
+
+  section.container{
+    position: absolute;
+    left: 179px;
+    transform: translate(-50%);
+    top: -100px;
+  }
+
+  h1{
+    font-size: 1.25rem ;
+    margin-top: 0.5rem;
+  }
+  a{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  ul{
+    margin-top: 2.5rem;
+  }
 }
